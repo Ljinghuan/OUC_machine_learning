@@ -1,0 +1,5 @@
+,Age,Age,Age,Age,Annual Income (k$),Annual Income (k$),Annual Income (k$),Annual Income (k$),Spending Score (1-100),Spending Score (1-100),Spending Score (1-100),Spending Score (1-100)
+,mean,std,min,max,mean,std,min,max,mean,std,min,max
+Gender,,,,,,,,,,,,
+Female,38.098214285714285,12.644095457392353,18,68,59.25,26.011951515055948,16,126,51.526785714285715,24.114949877478647,5,99
+Male,39.80681818181818,15.514811576858186,18,70,62.22727272727273,26.63837318249413,15,137,48.51136363636363,27.896769605833605,1,97
