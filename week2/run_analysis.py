@@ -220,8 +220,6 @@ def task3_profiles(df: pd.DataFrame) -> pd.DataFrame:
 
 def _persona_key(inc: float, sp: float, income_med: float, spend_med: float) -> str:
     """按收入-消费四象限划分客群类型（相对全样本中位数）。"""
-    if abs(inc - income_med) <= 10 and abs(sp - spend_med) <= 12:
-        return "中等稳健型"
     high_inc, high_sp = inc > income_med, sp > spend_med
     if high_inc and high_sp:
         return "富裕积极型"
@@ -229,7 +227,9 @@ def _persona_key(inc: float, sp: float, income_med: float, spend_med: float) -> 
         return "富裕谨慎型"
     if not high_inc and high_sp:
         return "潜力活跃型"
-    return "普通节约型"
+    if not high_inc and not high_sp:
+        return "普通节约型"
+    return "中等稳健型"  # 接近中位数的边界客群
 
 
 def cluster_labels_text(df: pd.DataFrame, prof_df: pd.DataFrame) -> dict[int, str]:

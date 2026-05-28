@@ -1,0 +1,4 @@
+模型,特征,准确率
+MultinomialNB,TF-IDF,0.899
+LogisticRegression,TF-IDF,0.8945
+LinearSVC,TF-IDF,0.9044

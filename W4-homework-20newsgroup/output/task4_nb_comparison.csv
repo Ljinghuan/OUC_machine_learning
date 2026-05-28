@@ -1,0 +1,3 @@
+特征,模型,准确率
+Count (BoW),MultinomialNB,0.8937
+TF-IDF,MultinomialNB,0.899
